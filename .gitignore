@@ -1,0 +1,10 @@
+.project
+.settings/org.eclipse.m2e.core.prefs
+pruebasdeconcepto-api/.classpath
+*.prefs
+*.component
+*.xml
+*.jsdtscope
+*.container
+*.name
+pruebasdeconcepto-web/apps_log_path_IS_UNDEFINED/foodpatterns.log
