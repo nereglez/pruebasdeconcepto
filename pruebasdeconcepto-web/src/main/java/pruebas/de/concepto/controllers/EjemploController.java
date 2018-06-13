@@ -67,7 +67,7 @@ public class EjemploController {
 	@ApiOperation(value = "Obtener usuario por login. Ejemplo de GET", response = ObjetoDTO.class, responseContainer = "Object", httpMethod = "GET", notes = ApiConstants.EJEMPLO_GET)
 	@ApiResponses(value = { @ApiResponse(code = 200, message = ApiConstants.CODE_200) })
 	@RequestMapping(method = RequestMethod.GET, consumes = "application/json", produces = "application/json")
-	public @ResponseBody ResponseEntity<String> findUsuarioByLogin(@RequestParam String login) {
+	public @ResponseBody ResponseEntity<String> findUsuarioByLogin(String login) {
 		HttpHeaders responseHeaders = CommonUtils.getCors();
 		UsuarioDto usuario = usuarioService.findByLogin(login);
 		// map a Json los resultados de la busqueda
